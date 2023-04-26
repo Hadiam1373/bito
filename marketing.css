@@ -1,0 +1,128 @@
+@font-face {
+    font-family: KALAMEH;
+    src: url('public/font/KALAMEH(FANUM)-MEDIUM.TTF');
+}
+
+@font-face {
+    font-family: FANUM;
+    src: url('public/font/KALAMEH(FANUM)-LIGHT.TTF');
+}
+
+* {
+    font-family: KALAMEH, serif;
+}
+
+
+/*header classes */
+.cu-header {
+    background-color: #F8F9FA;
+    padding-top: 26px;
+}
+
+.call-btn {
+    width: 151px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: rgba(0, 92, 83, 0.08);
+    color: #00D1BC;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0.089rem solid rgba(26, 26, 26, 0.08);
+}
+
+/*section 1 classes */
+.section-1 {
+    background-color: #F8F9FA;
+    padding-top: 61px;
+}
+
+.title-sec-1 {
+    font-weight: 700;
+    font-size: 2.625rem;
+}
+
+.text-sec-1 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    color: #011627;
+    font-family: FANUM, serif;
+}
+
+.email-text {
+    color: #573bd1;
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: FANUM, serif;
+}
+
+.inp-sec-1 {
+    width: 347px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 2px solid rgba(26, 26, 26, 0.1);
+    border-radius: 6px;
+}
+
+.btn-sec-1 {
+    background-color: #00D1BC;
+    color: #F8F9FA;
+    width: 110px;
+    height: 46px;
+    border-radius: 6px;
+    border: none;
+    position: relative;
+}
+
+.btn-sec-1::after {
+    width: 100%;
+    height: 100%;
+    content: url("public/image/Vector.svg");
+    position: absolute;
+    right: 30px;
+    top: 28%;
+}
+
+@media (max-width: 992px) {
+    .call-btn {
+        width: 92px;
+        height: 28px;
+        font-size: 1rem;
+    }
+
+    .icon-header {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo {
+        width: 140px;
+        height: 28px;
+    }
+
+    .inp-sec-1 {
+        width: 224px;
+        height: 40px;
+    }
+
+    .btn-sec-1 {
+        width: 83px;
+        height: 38px;
+    }
+
+    .btn-sec-1::after {
+       content: "";
+    }
+
+    .title-sec-1{
+        font-size: 2.25rem;
+    }
+
+    .text-sec-1{
+        font-size: 1.75rem;
+    }
+
+    .email-text{
+        font-size: 1.5rem;
+    }
+}
