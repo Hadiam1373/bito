@@ -12,6 +12,10 @@
     font-family: KALAMEH, serif;
 }
 
+body {
+    background-color: #F8F9FA;
+}
+
 
 /*header classes */
 .cu-header {
@@ -83,6 +87,51 @@
     top: 28%;
 }
 
+/*section 2 classes */
+.text-sec-2 {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.text-sec-2 .cu-title {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.section-2 {
+    background-color: #E4FDE1;
+    margin-top: 32px;
+}
+
+.text-sec-2 .cu-text {
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.img-sec-2 img {
+    width: 100%;
+}
+
+/*section 3*/
+.section-3 {
+    background-color: #f8f9fa;
+}
+
+.section-5 {
+    margin-top: 60px;
+}
+
+.section-5 .cu-title span {
+    background-color: #F1C40F;
+    padding: 0 2px;
+}
+
+.section-5 .cu-title::before {
+    content: url("public/image/Vector2.svg");
+}
+
+/*media query*/
+
 @media (max-width: 992px) {
     .call-btn {
         width: 92px;
@@ -111,18 +160,18 @@
     }
 
     .btn-sec-1::after {
-       content: "";
+        content: "";
     }
 
-    .title-sec-1{
+    .title-sec-1 {
         font-size: 2.25rem;
     }
 
-    .text-sec-1{
+    .text-sec-1 {
         font-size: 1.75rem;
     }
 
-    .email-text{
+    .email-text {
         font-size: 1.5rem;
     }
 }
