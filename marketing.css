@@ -111,18 +111,24 @@
     }
 
     .btn-sec-1::after {
-       content: "";
+        content: "";
     }
 
-    .title-sec-1{
+    .title-sec-1 {
         font-size: 2.25rem;
     }
 
-    .text-sec-1{
+    .text-sec-1 {
         font-size: 1.75rem;
     }
 
-    .email-text{
+    .email-text {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .inp-sec-1 {
+        width: 340px;
     }
 }
