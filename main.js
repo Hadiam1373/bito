@@ -47,6 +47,7 @@ const swiper2 = new Swiper(".carousel", {
 })
 
 
+
 let slides = [
     {
         img: 'public/image/most_of_currencies.svg',

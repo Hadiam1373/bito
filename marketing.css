@@ -12,6 +12,10 @@
     font-family: KALAMEH, serif;
 }
 
+body {
+    background-color: #F8F9FA;
+}
+
 
 /*header classes */
 .cu-header {
@@ -83,6 +87,199 @@
     top: 28%;
 }
 
+/*section 2 classes */
+.text-sec-2 {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.text-sec-2 .cu-title {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.section-2 {
+    background-color: #E4FDE1;
+    margin-top: 32px;
+}
+
+.section-2 img {
+    max-width: 652px;
+}
+
+.text-sec-2 .cu-text {
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.img-sec-2 img {
+    width: 100%;
+}
+
+/*section 3*/
+.section-3 {
+    background-color: #f8f9fa;
+    margin-top: 55px;
+}
+
+.section-3 img {
+    max-width: 391px;
+}
+
+.section-4 {
+    background-color: #E1E9F6;
+    padding: 35px 0;
+    margin-top: 42px;
+}
+
+.section-4 img {
+    max-width: 237px;
+}
+
+.section-5 {
+    margin-top: 60px;
+}
+
+.section-5 img {
+    max-width: 311px;
+}
+
+.section-5 .cu-title span {
+    background-color: #F1C40F;
+    padding: 0 2px;
+}
+
+.section-5 .cu-title::before {
+    content: url("public/image/Vector2.svg");
+}
+
+.section-6 {
+    background-image: url("public/image/Shapes.png");
+    background-position: center center;
+    background-color: #EBEFF0;
+    padding: 24px 0;
+    margin-top: 45px;
+}
+
+.card-carousel {
+    padding: 15px;
+    min-width: 347px;
+}
+
+.card-carousel p {
+    font-size: 21px;
+    margin-top: 12px;
+}
+
+.card-carousel img {
+    width: 32px;
+    height: 32px;
+}
+
+.cu-title2 {
+    font-size: 28px;
+    color: #00D1BC;
+    font-weight: 700;
+    font-family: FANUM, serif;
+}
+
+.text-sec-7 span {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.text-sec-7 p {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.comment-card {
+    position: relative;
+    margin-top: 56px;
+    min-height: 150px;
+}
+
+.bg-comment-card {
+    background: #7660D1;
+    border-radius: 4px;
+    width: 521px;
+    height: 125px;
+    color: white;
+}
+
+.bg-comment-card p {
+    margin-top: 10px;
+}
+
+.main-comment-card {
+    background: #39EDDA;
+    border-radius: 4px;
+    width: 521px;
+    height: 125px;
+    transform: rotate(5deg);
+    z-index: -1;
+    position: absolute;
+}
+
+.avatar-comment-card {
+    position: absolute;
+    top: -26px;
+    right: -4px;
+}
+
+.name-span {
+    position: absolute;
+    top: 9px;
+    right: 20%;
+    font-size: 18px;
+    font-family: FANUM, serif;
+    font-weight: 400;
+}
+
+.comment-text {
+    height: 100%;
+    overflow: auto;
+    padding: 0 15px;
+}
+
+.head-comment-card {
+    position: relative;
+    height: 40px;
+    background-color: #7660D1;
+    background-image: url("public/image/Group-48.svg");
+    background-position: 9px 13px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+}
+
+.section-8 .accordion-flush .accordion-item .accordion-button {
+    background-color: #f8f9fa !important;
+    color: #090c08 !important;
+}
+
+.section-8 {
+    margin-top: 100px;
+}
+
+.question-title {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.question {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.answer {
+    font-weight: 400;
+    font-size: 28px;
+    color: #011627;
+}
+
+/*media query*/
+
 @media (max-width: 992px) {
     .call-btn {
         width: 92px;
@@ -125,10 +322,82 @@
     .email-text {
         font-size: 1.5rem;
     }
+
+    .section-5 {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
     .inp-sec-1 {
         width: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cu-title2 {
+        font-size: 24px;
+    }
+
+    .card-carousel p {
+        font-size: 18px;
+    }
+
+    .card-carousel img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .card-carousel {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .bg-comment-card {
+        width: 100%;
+        min-width: 327px;
+        height: 140px;
+    }
+
+    .bg-comment-card p {
+        font-size: 15px;
+    }
+
+    .main-comment-card {
+        width: 100%;
+        min-width: 327px;
+        height: 124px;
+    }
+
+    .comment-text {
+        height: 100px;
+        overflow: auto;
+        padding: 0 15px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .answer {
+        font-size: 16px;
+    }
+
+    .section-7 .img-section {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-7 .img-section {
+        display: none !important;
+    }
+
+    .main-comment-card {
+        width: 100%;
+    }
+
+    .bg-comment-card {
+        width: 100%;
     }
 }
