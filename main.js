@@ -6,9 +6,10 @@ import 'swiper/css';
 import 'bootstrap/dist/js/bootstrap.js'
 
 const swiper = new Swiper(".mySwiper", {
+    modules: [Navigation, Pagination],
     slidesPerView: 3,
     spaceBetween: 60,
-    pagination: {
+    Pagination: {
         el: ".swiper-pagination",
     },
     breakpoints: {

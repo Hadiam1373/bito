@@ -68,6 +68,10 @@ body {
     border-radius: 6px;
 }
 
+.icon-header {
+    cursor: pointer
+}
+
 .btn-sec-1 {
     background-color: #00D1BC;
     color: #F8F9FA;
@@ -85,6 +89,7 @@ body {
     position: absolute;
     right: 30px;
     top: 28%;
+    padding-right: 5px;
 }
 
 /*section 2 classes */
@@ -184,7 +189,7 @@ body {
 }
 
 .text-sec-7 span {
-    font-size: 38px;
+    font-size: 2.375rem;
     font-weight: 700;
 }
 
@@ -204,7 +209,7 @@ body {
     background: #7660D1;
     border-radius: 4px;
     width: 521px;
-    height: 125px;
+    min-height: 125px;
     color: white;
 }
 
@@ -239,7 +244,7 @@ body {
 
 .comment-text {
     height: 100%;
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 0 15px;
 }
 
@@ -264,7 +269,7 @@ body {
 
 .question-title {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
 .question {
@@ -303,7 +308,7 @@ body {
     font-family: FANUM;
 }
 
-footer{
+footer {
     height: 80px;
     display: flex;
     justify-content: center;
@@ -322,6 +327,7 @@ footer{
     .icon-header {
         width: 28px;
         height: 28px;
+        cursor: pointer
     }
 
     .logo {
@@ -382,13 +388,13 @@ footer{
 
     .card-carousel {
         padding: 15px;
-        width: 90%;
+        width: 100%;
     }
 
     .bg-comment-card {
         width: 100%;
         min-width: 327px;
-        height: 140px;
+        min-height: 140px;
     }
 
     .bg-comment-card p {
@@ -402,8 +408,7 @@ footer{
     }
 
     .comment-text {
-        height: 100px;
-        overflow: auto;
+        min-height: 100px;
         padding: 0 15px;
     }
 
@@ -417,6 +422,34 @@ footer{
 
     .section-7 .img-section {
         display: none !important;
+    }
+
+    .title-sec-1 {
+        font-size: 2.25rem;
+    }
+
+    .text-sec-2 .cu-title {
+        font-size: 1.75rem;
+    }
+
+    .section-5 .cu-title span {
+        font-size: 1.75rem;
+    }
+
+    .text-sec-7 span{
+        font-size: 1.75rem;
+    }
+
+    .question-title{
+        font-size: 1.75rem;
+    }
+
+    .section-8{
+        margin-top: 0;
+    }
+
+    .text-sec-7 p{
+        margin-top: 0;
     }
 }
 

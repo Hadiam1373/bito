@@ -6,6 +6,7 @@
     <title>marketing</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
           integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="marketing.css">
 </head>
 <body dir="rtl">
@@ -14,8 +15,8 @@
         <div class="d-flex flex-row align-items-center justify-content-between">
             <div class="d-flex align-items-center gap-3">
                 <button class="call-btn">تماس با ما</button>
-                <img class="icon-header" src="public/image/instagram.svg" alt="">
-                <img class="icon-header" src="public/image/linkedin.svg" alt="">
+                <img class="icon-header" src="public/image/instagram.png" alt="">
+                <img class="icon-header" src="public/image/linkedin.png" alt="">
             </div>
             <div>
                 <img class="logo" src="public/image/logo.svg" alt="">
@@ -141,7 +142,20 @@
         </div>
         <div class="swiper mySwiper2">
             <div id="wrapper2" class="swiper-wrapper">
-                <div class="swiper-slide mx-3">
+                <div class="swiper-slide">
+                    <div class="card card-carousel">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="cu-title2">ثبت نام</span>
+                            <img src="public/image/user-cirlce-add.svg" alt="">
+                        </div>
+                        <p>
+                            پس از ورود به پنل و وارد کردن اطلاعات لازم ، امکان استفاده از درگاه پرداخت و ایجاد صورت
+                            حساب
+                            برای شما فعال خواهد شد.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="card card-carousel">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="cu-title2">اضافه کردن درگاه به سایت</span>
@@ -154,24 +168,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide mx-3">
+                <div class="swiper-slide">
                     <div class="card card-carousel">
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="cu-title2">اضافه کردن درگاه به سایت</span>
-                            <img src="public/image/monitor.svg" alt="">
-                        </div>
-                        <p>
-                            پس از ورود به پنل و وارد کردن اطلاعات لازم ، امکان استفاده از درگاه پرداخت و ایجاد صورت
-                            حساب
-                            برای شما فعال خواهد شد.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide mx-3">
-                    <div class="card card-carousel">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="cu-title2">اضافه کردن درگاه به سایت</span>
-                            <img src="public/image/monitor.svg" alt="">
+                            <span class="cu-title2">استفاده از رمز ارز برای پرداخت</span>
+                            <img src="public/image/bitcoin-convert.svg" alt="">
                         </div>
                         <p>
                             پس از ورود به پنل و وارد کردن اطلاعات لازم ، امکان استفاده از درگاه پرداخت و ایجاد صورت
@@ -181,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination2"></div>
         </div>
     </div>
 </section>
@@ -258,14 +259,10 @@
                     </div>
                 </div>
             </div>
-
             <div class="img-section col-12 col-lg-6 d-flex justify-content-end">
                 <img src="public/image/Frame.svg" alt="">
             </div>
         </div>
-    </div>
-
-
     </div>
 </section>
 <!--section 8-->
@@ -348,9 +345,27 @@
 </section>
 <!--footer section-->
 <footer>
-     اگر سؤالی دارید یا نیاز به کمک دارید، لطفاً با ما در <strong>support@bitocredit.com</strong> تماس بگیرید یا با شماره
-     <strong>02112345678</strong> تماس
-    بگیرید.
+    <div class="d-none d-lg-block d-md-block">
+        اگر سؤالی دارید یا نیاز به کمک دارید، لطفاً با ما در <strong>support@bitocredit.com</strong> تماس بگیرید یا با
+        شماره
+        <strong>02112345678</strong> تماس
+        بگیرید.
+    </div>
+    <div class="w-100 d-flex d-lg-none d-md-none d-sm-flex justify-content-around align-items-center">
+        <div>
+            <label>
+                <img src="public/image/phone.svg" alt="">
+                <span>+98 2112345678</span>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <img src="public/image/Message.svg" alt="">
+                <span>support@bitocredit.com</span>
+            </label>
+        </div>
+    </div>
 </footer>
 
 <script type="module" src="/landing.js"></script>
